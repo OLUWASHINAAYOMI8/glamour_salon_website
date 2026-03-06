@@ -1,0 +1,199 @@
+/* RESET */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.6; 
+    background: #f8f6f2;
+    color: #111;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #fff;
+}
+
+.nav-links a{
+    margin-left:20px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+}
+
+.btn{
+    background: #846500;
+    text-decoration: none;
+    color:#fff ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero{
+    padding: 100px 60px;
+    background: url(hero.jpg);
+    background-size: cover;
+    text-align: right;
+    background-position: center;
+    margin-bottom: 30px;
+    
+}
+
+.hero-text{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:#846500 ;
+}
+
+.hero-paragraph{
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.About-Us{
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 2;
+    background-color: color(from color srgb r g b);
+}
+
+h2{
+    font-family: cursive;
+    
+    text-align: center;
+}
+
+/* SECTION SPACING */
+
+.services {
+  padding: 80px 60px;
+  background-color: #ffffff;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+
+.services-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.service-card {
+  background: #f8f6f2;
+  padding: 30px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* GALLERY */
+.gallery {
+  padding: 80px 60px;
+  background-color: #f3efe8;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery-container img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.gallery-container img {
+  height: 250px;
+}
+/* CONTACT */
+.contact-class{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Contact-details{
+    padding: 80px;
+    box-shadow: 0 10px 80px;
+    line-height: 2;
+    background-color:rgb(29, 28, 28);
+    color: #fff;
+    
+   
+}
+.fa-map-marker{
+    color: #846500;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.Message-Us{
+    padding: 80px;
+    line-height: 3;
+    box-shadow: 0 10px 80px;
+    
+    
+}
+
+.Whatsapp-btn{
+    background: green;
+    text-decoration: none;
+    color:#fff ;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.gallery-container img {
+  transition: 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
