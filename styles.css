@@ -13,10 +13,13 @@ body{
   overflow-x:hidden;
 }
 
+
+/* logo */ 
 .Logo{
-font-size:clamp(1.5rem,5vw,3rem);
+  font-size:clamp(1.5rem,5vw,3rem);
   font-weight: bold;
   color: #846500;
+  font-family: cursive;
 }
 
 /* NAVBAR */
@@ -49,14 +52,13 @@ font-size:clamp(1.5rem,5vw,3rem);
   padding: 100px 60px;
   background: url(hero.jpg);
   background-size: cover;
-  text-align: right;
   background-position: center;
   margin-bottom: 30px;
     
 }
 
 .hero-text{
-  font-size:clamp(1.5rem,5vw,3rem);
+  font-size:clamp(2.5rem,7vw,4rem);
   color:#846500 ;
 }
 
@@ -65,6 +67,20 @@ font-size:clamp(1.5rem,5vw,3rem);
   color: #fff;
 }
 
+.vv{
+  justify-self: center;
+  margin-top: 50px;
+}
+.btnn{
+  background: #846500;
+  text-decoration: none;
+  color:#fff ;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  
+}
+/* About Us */
 .About-Us{
   text-align: center;
   margin-bottom: 5px;
@@ -114,6 +130,7 @@ h2{
   width: 100%;
   text-align: center;
   transition: 0.3s ease;
+  
 }
 
 .service-card:hover {
@@ -146,6 +163,7 @@ h2{
 .gallery-container img {
   height: 100%;
 }
+
 /* CONTACT */
 .contact-class{
   display: flex;
@@ -207,12 +225,21 @@ h2{
   background: green;
   text-decoration: none;
   color:#fff ;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-radius: 5px; 
   font-weight: bold;
   cursor: pointer;
 }
 
+/* footer */
+footer{
+text-align:center;
+padding:20px;
+background:#222;
+color:white;
+}
+
+/* Media Query*/ 
 @media (max-width: 768px) {
   .navbar {
     flex-direction:row;
@@ -251,4 +278,16 @@ h2{
 
 .gallery-container img:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero{
+    background: url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+    
+}
+
 }
